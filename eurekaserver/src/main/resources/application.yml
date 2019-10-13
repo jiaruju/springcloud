@@ -1,0 +1,13 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      default: http://localhost:8761/eureka/
+
+#属性说明：
+#eureka.client.register-with-eureka: 是否将当前的EurekaServer服务作为客户端进行注册
+#eureka.client.fetch-registry： 是否获取其他EurekaServer服务的数据
+#eureka.client.service-url: 注册中心的访问地址

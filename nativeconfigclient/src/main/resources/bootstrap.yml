@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8762
+      fail-fast: true
+#      注解说明：
+#cloud.config.uri: 本地Config Server的访问路径
+#cloud.config.fail-fast:设置客户端优先判断Config Server获取是否正常。
+#通过spring.application.name结合spring.profiles.active拼接目标配置文件名configclient-dev.yml,
+#然后去ConfigServer中查找该文件
